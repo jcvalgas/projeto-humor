@@ -1,6 +1,6 @@
 
 body {
-  background: url('/assets/img/background-matrix.gif') fixed;
+  background: url('./assets/img/background-matrix.gif') fixed;
   height: 100vh;
   padding: 0;
   margin: 0;
