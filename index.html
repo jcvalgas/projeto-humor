@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Projeto Humor</title>
+    <link rel="stylesheet" href="./estilos/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Smooch+Sans:wght@200&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="container">
+        <header>
+            <h1>Stages Keanu Reeves</h1>
+        </header>
+
+        <section>
+            <div id="box-img">
+                <img id='image' src="./assets/img/reeves-keanu.gif" alt="">
+            </div>
+            <div id ='box-text'>
+                <p>The matrix has you.</p> <br>
+                <hr />
+                <p>Name: <span id="name">Keanu Reeves.</span></p> <br>
+                <p>Stage: <span id="stage">Normal.</span></p> <br>
+                <p>Catchphrase: <span id="catchphrase">You're breathtaking.</span></p>
+                <hr /> <br>
+                <input type='button' onclick="updateStage()" value='CHANGE!'>
+            </div>
+        </section>
+    </div>
+
+    <script>
+        let indexDescription = [
+            {name: 'Keanu Reeves', Stage: 'Normal', Cathphrase: "You're breathtaking", img: './assets/img/reeves-keanu.gif'},
+            {name: 'Mr. Anderson (Neo)', Stage: 'God', Cathphrase: "I'm the chosen one", img: './assets/img/neo-matrix.gif'},
+            {name: 'John Wick', Stage: 'Danger', Cathphrase: "killed my dog, now they're going to suffer", img: './assets/img/john-wick.gif'},
+        ]
+        let cont = 0;
+        function updateStage()
+        {
+            cont++;
+            if(cont > 2) {cont=0;}
+            document.getElementById('name').innerHTML = indexDescription[cont].name;
+            document.getElementById('stage').innerHTML = indexDescription[cont].Stage;
+            document.getElementById('catchphrase').innerHTML = indexDescription[cont].Cathphrase;
+            document.getElementById('image').src = indexDescription[cont].img;
+        }   
+    </script>
+</body>
+</html>

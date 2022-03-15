@@ -1,0 +1,99 @@
+
+body {
+  background: url('/assets/img/background-matrix.gif') 100% 100% fixed;
+  height: 100vh;
+  padding: 0;
+  margin: 0;
+}
+
+#container {
+    height: 100vh;
+    background: rgb(0, 0, 0, 0.65);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+#container > header {
+    background: #42453E;
+    text-align: center;
+    border: 5px solid rgb(66, 69, 62);
+    border-top-right-radius: 10%;
+    border-top-left-radius: 10%;
+    height: 10%;
+    width: 70%;
+}
+
+h1 {
+    margin: auto;
+    font-family: 'Smooch Sans', sans-serif;
+    text-shadow: 1px 1px 2px black;
+    color: aliceblue;
+    font-size: 3rem;
+}
+
+#container > section{
+    background-color: #2D2E2E;
+    border: 5px solid rgb(66, 69, 62);
+    border-top: none;
+    border-bottom-right-radius: 10%;
+    border-bottom-left-radius: 10%;
+    box-shadow: inset 0 0 1em black;
+    width: 70%;
+    height: 70%;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-items: center;
+}
+
+#box-img{
+    margin: auto;
+    height: 60%;
+    width: 40%;
+}
+
+#box-text{
+    margin: auto;
+    text-align: center;
+    width: 35%;
+    height: 80%;
+    background-color: black;
+    border-radius: 8%;
+    border: 2px solid #42453e;
+    box-shadow: 13px 13px 1em black;
+    padding: 1rem;
+}
+
+#box-text > p{
+    color: white;
+    font-family: 'Smooch Sans', monospace;
+    font-size: 1.2rem;
+    -webkit-text-stroke-width: 0.5px;
+    -webkit-text-stroke-color: rgb(24, 202, 8);
+}
+
+#box-text > hr{
+    border: 6px dotted green;
+    border-bottom: none;
+    width: inherit;
+}
+
+#box-img > img {
+    margin: auto;
+    border: 1px solid #42453e;
+    border-radius: 15%;
+    box-shadow: 0px 13px 1em black;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+input {
+    color: white;
+    background-color: green;
+    padding: 1%;
+    border-radius: 15%;
+}
+
+input:hover{
+    background-color: red;
+}
